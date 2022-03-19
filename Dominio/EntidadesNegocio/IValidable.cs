@@ -7,5 +7,6 @@ namespace Dominio.EntidadesNegocio
     public interface IValidable
     {
         public bool SoyValido();
+        public string Funca(); 
     }
 }
