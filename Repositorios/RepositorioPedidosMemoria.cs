@@ -6,32 +6,29 @@ using Dominio.EntidadesNegocio;
 
 namespace Repositorios
 {
-    public class RepositorioClientesMemoria : IRepositorioClientes
+    public class RepositorioPedidosMemoria : IRepositorioPedidos
     {
-        public static int ultid { get; }
-        public List<Cliente> Clientes { get; set; }
-
-        public bool Add(Cliente obj)
+        public bool Add(Pedido obj)
         {
             throw new NotImplementedException();
         }
 
-        public IEnumerable<Cliente> ClientesConPuntajeMayorA(int puntos)
+        public IEnumerable<Pedido> FindAll()
         {
             throw new NotImplementedException();
         }
 
-        public IEnumerable<Cliente> FindAll()
+        public bool FindByElement(Pedido obj)
         {
             throw new NotImplementedException();
         }
 
-        public bool FindByElement(Cliente obj)
+        public Pedido FindById(int id)
         {
             throw new NotImplementedException();
         }
 
-        public Cliente FindById(int id)
+        public IEnumerable<Pedido> PedidosDeClientes(int id)
         {
             throw new NotImplementedException();
         }
@@ -41,7 +38,7 @@ namespace Repositorios
             throw new NotImplementedException();
         }
 
-        public bool Update(Cliente obj)
+        public bool Update(Pedido obj)
         {
             throw new NotImplementedException();
         }

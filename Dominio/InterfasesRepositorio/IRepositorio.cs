@@ -11,5 +11,6 @@ namespace Dominio.InterfasesRepositorio
         bool Update(T obj);
         IEnumerable<T> FindAll();
         T FindById(int id);
+        bool FindByElement(T obj);
     }
 }

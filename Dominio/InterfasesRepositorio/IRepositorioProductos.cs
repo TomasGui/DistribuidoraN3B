@@ -5,8 +5,8 @@ using Dominio.EntidadesNegocio;
 
 namespace Dominio.InterfasesRepositorio
 {
-    public interface IRepositorioClientes : IRepositorio<Cliente>
+    public interface IRepositorioProductos: IRepositorio<Producto>
     {
-        IEnumerable<Cliente> ClientesConPuntajeMayorA(int puntos); 
+        IEnumerable<Producto> ProductosEnRangoPrecio(decimal desde, decimal hasta); 
     }
 }

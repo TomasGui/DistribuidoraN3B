@@ -1,37 +1,34 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using Dominio.InterfasesRepositorio;
 using Dominio.EntidadesNegocio;
+using Dominio.InterfasesRepositorio;
 
 namespace Repositorios
 {
-    public class RepositorioClientesMemoria : IRepositorioClientes
+    public class RepositorioProductosMemoria : IRepositorioProductos
     {
-        public static int ultid { get; }
-        public List<Cliente> Clientes { get; set; }
-
-        public bool Add(Cliente obj)
+        public bool Add(Producto obj)
         {
             throw new NotImplementedException();
         }
 
-        public IEnumerable<Cliente> ClientesConPuntajeMayorA(int puntos)
+        public IEnumerable<Producto> FindAll()
         {
             throw new NotImplementedException();
         }
 
-        public IEnumerable<Cliente> FindAll()
+        public bool FindByElement(Producto obj)
         {
             throw new NotImplementedException();
         }
 
-        public bool FindByElement(Cliente obj)
+        public Producto FindById(int id)
         {
             throw new NotImplementedException();
         }
 
-        public Cliente FindById(int id)
+        public IEnumerable<Producto> ProductosEnRangoPrecio(decimal desde, decimal hasta)
         {
             throw new NotImplementedException();
         }
@@ -41,7 +38,7 @@ namespace Repositorios
             throw new NotImplementedException();
         }
 
-        public bool Update(Cliente obj)
+        public bool Update(Producto obj)
         {
             throw new NotImplementedException();
         }
