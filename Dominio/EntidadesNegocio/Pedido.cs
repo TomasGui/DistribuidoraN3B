@@ -4,11 +4,11 @@ using System.Text;
 
 namespace Dominio.EntidadesNegocio
 {
-    public class Valoracion
+    public class Pedido
     {
         public int Id { get; set; }
-        public int Puntaje { get; set; }
-        public string Alias { get; set; }
-        public string Comentario { get; set; }
+        public DateTime Fecha { get; set; }
+        public List<Item> Items { get; set; }
+
     }
 }

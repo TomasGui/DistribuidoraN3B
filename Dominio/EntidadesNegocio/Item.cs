@@ -4,7 +4,10 @@ using System.Text;
 
 namespace Dominio.EntidadesNegocio
 {
-    class Item
+    public class Item
     {
+        public int Cantidad { get; set; }
+        public Producto Producto { get; set; }
+        public decimal PrecioCongelado { get; set; }
     }
 }
